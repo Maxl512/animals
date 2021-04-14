@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Animals</title>
+</head>
+<body>
+   <div class="animals">
+    <div class="form-container">
+        <h2 class="form-header">Add Animal</h1>
+        <form class="add-form" onsubmit="addAnimal();">
+            <label class="add-form__label" for="name">Name:</label>
+            <input required minlength="6" maxlength="12" class="add-form__input" id="name" type="text">
+            <label class="add-form__label" for="race">Race:</label>
+            <input required minlength="5" maxlength="15" class="add-form__input" id="race" type="text">
+            <label class="add-form__label" for="age">Age:</label>
+            <input required maxlength="3" max="100" class="add-form__input" type="number" id="age">
+            <input class="add-form__input--submit" type="submit" value="Add">
+        </form>
+    </div>
+    <div class="animal-list">
+        <div class="animal-header">
+            <h2>Animales</h2>
+        </div>
+        <div id="display-animals" class="display-animals"></div>
+    </div>
+</div>
+
+<script src="js/script.js"></script>  
+</body>
+</html>
